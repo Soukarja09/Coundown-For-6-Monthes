@@ -2,104 +2,79 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Our Countdown</title>
+  <title>Happy 6 Months!</title>
   <style>
     body {
-      background-color: #fff0f5;
+      background: linear-gradient(to bottom, #fff0f5, #ffe4e1);
       font-family: 'Segoe UI', cursive;
-      color: #444;
-      padding: 20px;
+      text-align: center;
+      padding: 30px;
       margin: 0;
-      overflow-x: hidden;
+      color: #444;
     }
     h1 {
+      font-size: 2.8em;
       color: #e75480;
-      text-align: center;
-      animation: fadein 2s ease;
+      margin-bottom: 10px;
+      animation: fadeIn 2s ease-out;
     }
-    .day {
-      margin: 20px auto;
+    p {
+      font-size: 1.3em;
       max-width: 600px;
-      padding: 15px;
-      background: white;
-      border-radius: 15px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    }
-    .day h2 {
-      color: #ff69b4;
-    }
-    .day p {
-      font-family: 'Patrick Hand', cursive;
-      font-size: 1.1em;
+      margin: auto;
       white-space: pre-line;
-      animation: typing 2s steps(40, end);
-      overflow: hidden;
-      border-right: .15em solid pink;
+      animation: fadeIn 3s ease-in-out;
     }
-    img.polaroid {
-      width: 90%;
-      max-width: 300px;
-      display: block;
-      margin: 10px auto;
-      box-shadow: 0 0 15px rgba(0,0,0,0.2);
-      transform: rotate(-2deg);
+    img {
+      width: 85%;
+      max-width: 320px;
+      margin: 20px auto;
       border: 10px solid white;
-    }
-    audio {
+      box-shadow: 0 8px 18px rgba(0,0,0,0.15);
+      border-radius: 8px;
       display: block;
-      margin: 10px auto;
+      animation: floatIn 2.5s ease-in-out;
     }
     .surprise-btn {
-      background: #ff6f91;
+      margin-top: 20px;
+      background-color: #ff6f91;
       color: white;
+      padding: 12px 24px;
       border: none;
-      border-radius: 20px;
-      padding: 10px 20px;
-      font-size: 1em;
+      border-radius: 30px;
+      font-size: 1.1em;
       cursor: pointer;
+    }
+    audio {
       margin-top: 20px;
     }
-    @keyframes fadein {
-      from { opacity: 0; transform: translateY(-20px);}
-      to { opacity: 1; transform: translateY(0);}
+    @keyframes fadeIn {
+      from {opacity: 0; transform: translateY(-20px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+    @keyframes floatIn {
+      from {opacity: 0; transform: scale(0.95);}
+      to {opacity: 1; transform: scale(1);}
     }
   </style>
 </head>
 <body>
-  <h1>4 Days Left For Our 6 Month Celebration ❤️</h1>
-
-  <div class="day">
-    <h2>Day 4</h2>
-    <p>The day I saw you, the world paused... and my heart whispered, "It's her."</p>
-    <audio controls><source src="day4.mp3" type="audio/mpeg"/></audio>
-  </div>
-
-  <div class="day">
-    <h2>Day 3</h2>
-    <p>Three days left to celebrate half a year... but forever to go with you.</p>
-    <audio controls><source src="day3.mp3" type="audio/mpeg"/></audio>
-  </div>
-
-  <div class="day">
-    <h2>Day 2</h2>
-    <p>You don’t know how much your smile saves me every day…</p>
-    <audio controls><source src="day2.mp3" type="audio/mpeg"/></audio>
-  </div>
-
-  <div class="day">
-    <h2>Day 1</h2>
-    <p>One more sleep till our story reaches another milestone. I can't wait.</p>
-    <audio controls><source src="day1.mp3" type="audio/mpeg"/></audio>
-  </div>
-
-  <div class="day">
-    <h2>Today!</h2>
-    <p>We made it, my love. 6 months of us. Let's make forever even better. 💞</p>
-    <img src="final-photo.jpg" class="polaroid" alt="Us" />
-    <audio controls><source src="day0.mp3" type="audio/mpeg"/></audio>
-    <button class="surprise-btn" onclick="location.href='surprise.html'">Click for a surprise 🎁</button>
-  </div>
+  <h1>Happy 6 Months, My Love ❤️</h1>
+  <p>
+Six months of laughter,  
+Six months of trust,  
+Six months of “us” —  
+And it’s only the beginning.  
+You mean the world to me.
+  </p>
+  <img src="final-photo.jpg" alt="Us" />
+  <audio controls autoplay loop>
+    <source src="day0.mp3" type="audio/mpeg"/>
+    Your browser does not support audio.
+  </audio>
+  <br/>
+  <button class="surprise-btn" onclick="location.href='surprise.html'">Click for your surprise 🎁</button>
 </body>
 </html>
